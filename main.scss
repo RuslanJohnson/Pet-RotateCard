@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    background-color: #101010;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.card-item {
+    background-color: #fff;
+    width: 200px;
+    height: 400px;
+    transform: rotateX(20deg);
+    transform: transition(0.2s);
+}
